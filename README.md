@@ -1,3 +1,11 @@
-<img width="1917" height="899" alt="Screenshot 2025-10-18 160306" src="https://github.com/user-attachments/assets/470d58c6-d819-4e98-854a-682be650ef55" />
+<img width="1915" height="900" alt="Screenshot 2025-10-18 162056" src="https://github.com/user-attachments/assets/cb2bfc8c-9a53-46e3-8d0f-0fc38c2299eb" /><img width="1891" height="900" alt="Screenshot 2025-10-18 162401" src="https://github.com/user-attachments/assets/6cef26ed-ef16-4652-9ca0-07a237414de1" /><img width="1917" height="899" alt="Screenshot 2025-10-18 160306" src="https://github.com/user-attachments/assets/470d58c6-d819-4e98-854a-682be650ef55" />
 <img width="1919" height="906" alt="Screenshot 2025-10-18 161630" src="https://github.com/user-attachments/assets/19a42a93-929c-4170-8e4f-3a99e25a6b15" />
 <img width="1916" height="903" alt="Screenshot 2025-10-18 161644" src="https://github.com/user-attachments/assets/6b71fd28-c186-4d3e-9230-a4e322b86ebc" />
+<img width="1919" height="898" alt="Screenshot 2025-10-18 161816" src="https://github.com/user-attachments/assets/66ad4590-112a-46ea-8eb0-bb89ee2983cb" />
+<img width="1915" height="900" alt="Screenshot 2025-10-18 162056" src="https://github.com/user-attachments/assets/14c0a97f-d99e-4051-a5da-5e4b73451491" />
+<img width="1919" height="901" alt="Screenshot 2025-10-18 162229" src="https://github.com/user-attachments/assets/aadbb999-80cc-4422-bfe6-38450758b6db" />
+<img width="1919" height="903" alt="Screenshot 2025-10-18 162245" src="https://github.com/user-attachments/assets/a6264a23-aa56-4a8d-abb5-5b9e472ca2f8" />
+<img width="1919" height="898" alt="Screenshot 2025-10-18 162302" src="https://github.com/user-attachments/assets/56c33b46-1d8e-48d0-9e7c-5ea55183310a" />
+<img width="1919" height="904" alt="Screenshot 2025-10-18 162319" src="https://github.com/user-attachments/assets/e927eedc-a55c-4652-8678-43b78f5cf449" />
+<img width="1919" height="905" alt="Screenshot 2025-10-18 162337" src="https://github.com/user-attachments/assets/01a7281a-cc3d-402a-8362-24ebccbcdf19" />
+<img width="1891" height="900" alt="Screenshot 2025-10-18 162401" src="https://github.com/user-attachments/assets/7cbfc5d8-28c2-48f5-907b-aa2ccbc946c2" />
