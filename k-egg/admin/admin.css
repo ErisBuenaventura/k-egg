@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll globally */
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.3s;
+    min-width: 0; /* Prevent flex overflow */
+    overflow-x: hidden; /* Prevent content overflow */
+}
+
+.sidebar.collapsed ~ .main-content {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+}
+
+.sidebar {
+    width: 250px;
+    background: #1e293b;
+    color: white;
+    height: 100vh;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar .link-text {
+    display: inline;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.sidebar-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f172a;
+}
+
+.sidebar .brand {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.sidebar.collapsed .brand {
+    display: none;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.sidebar .nav-items {
+    flex-grow: 1;
+    padding: 0;
+    list-style: none;
+}
+
+/* Sidebar links */
+.nav-items {
+    flex-grow: 1;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+    white-space: nowrap; /* Prevents icon/text wrap */
+}
+
+.nav-link:hover {
+    background: #334155;
+}
+
+.collapsed .nav-link .link-text {
+        display: none;
+    }
+
+.nav-link i {
+    font-size: 0.9rem;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: 1rem;
+    background: #0f172a;
+    border-top: 1px solid #334155;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user-info strong {
+    font-size: 0.7rem;
+    display: block;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    font-weight: 600;
+}
+
+.logout-btn i {
+    font-size: 1.25rem;
+}
+
+/* Collapsed State Hiding */
+.sidebar.collapsed .brand,
+.sidebar.collapsed .link-text,
+.sidebar.collapsed .user-info,
+.sidebar.collapsed .logout-text {
+    display: none;
+}
+
+/* Center and stack nav icons */
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding: 6px 0;
+}
+
+.sidebar.collapsed .nav-link i {
+    font-size: 1.4rem;
+}
+
+/* Optional: adjust profile image */
+.user-profile img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+.card {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+.sidebar.collapsed ~ .main-content .open-toggle {
+    display: block;
+}
+
+.left-wrap-content {
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Layout wrapper for manage_staff.php */
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Ensure content takes the remaining space next to sidebar */
+.wrapper .main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+/* Table container for scroll */
+.table-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Hide elements when printing */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .wrapper .main-content {
+        padding: 0 !important;
+    }
+
+    .table-container {
+        overflow: visible !important;
+        max-height: none !important;
+    }
+}
+
+/* Global table adjustments */
+.table-sm td,
+.table-sm th {
+    padding: 0.3rem 0.4rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.2 !important;
+    vertical-align: middle !important;
+}
+
+/* Apply smaller font to content areas */
+.content-area,
+.card {
+    font-size: 0.85rem !important;
+}
+
+/* Table responsiveness tweaks (optional if too wide) */
+.table-responsive {
+    font-size: 0.85rem !important;
+}
+
+/* Smaller headers for each section */
+.content-area h4,
+.card-header h5 {
+    font-size: 1rem !important;
+}
+
+/* Smaller badges and buttons */
+.badge {
+    font-size: 0.7rem !important;
+    padding: 0.25em 0.5em !important;
+}
+
+.btn-sm {
+    padding: 0.2rem 0.4rem !important;
+    font-size: 0.75rem !important;
+}
+
+/* Image thumbnails in Expense table */
+.table img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.summary-card {
+    min-width: 0;
+    height: 200px; /* Same height for all */
+}
